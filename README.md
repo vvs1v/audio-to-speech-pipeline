@@ -1,4 +1,4 @@
-# Intelligent Data Pipeline
+# Intelligent Data Pipeline # Writing this line to trigger the pipeline 
 ### It is a part of [Vakyansh's](https://open-speech-ekstep.github.io) recipes to build state of the art Speech Recogniition Model
 
 Pipelines to transform raw data and prepare data for model training. They clean, process and balance data for model training
