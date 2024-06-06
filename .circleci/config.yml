@@ -68,6 +68,7 @@ jobs:
             pip install numpy
             pip install wheel  #to install wheel added on 06-06 by vaibhav
             pip install typing_extensions  # Install typing_extensions
+            pip install python-dev-tools --user --upgrade
             pip install -r requirements.txt
             python --version ; pip --version ; pwd ; ls
       # - run:
@@ -105,6 +106,7 @@ jobs:
             pip install numpy
             pip install wheel  #to install wheel added on 06-06 by vaibhav
             pip install typing_extensions  # Install typing_extensions
+            pip install python-dev-tools --user --upgrade
             pip install -r requirements.txt
             python --version ; pip --version ; pwd ; ls
       - run:
