@@ -61,7 +61,7 @@ jobs:
             python --version ; pip --version ; pwd ; ls
             sudo apt-get update
             sudo apt-get install -y ffmpeg
-            #sudo apt-get install -y sox
+            sudo apt-get install -y sox
             sudo apt-get install -y gcc-multilib g++-multilib
             sudo apt-get install libpq-dev
             pip install --upgrade pip
@@ -101,6 +101,8 @@ jobs:
             sudo apt-get install -y gcc-multilib g++-multilib
             sudo apt-get install libpq-dev
             pip install --upgrade pip
+            pip install numpy
+            pip install wheel  #to install wheel added on 06-06 by vaibhav
             pip install -r requirements.txt
             python --version ; pip --version ; pwd ; ls
       - run:
