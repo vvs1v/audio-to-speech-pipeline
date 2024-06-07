@@ -69,7 +69,7 @@ jobs:
             pip install wheel  #to install wheel added on 06-06 by vaibhav
             pip install typing_extensions  # Install typing_extensions
             pip install python-dev-tools --user --upgrade
-            pip install --upgrade setuptools
+     #       pip install --upgrade setuptools
             pip install requests
             pip install cython
             # Install hdbscan separately
@@ -113,7 +113,7 @@ jobs:
             pip install wheel  #to install wheel added on 06-06 by vaibhav
             pip install typing_extensions  # Install typing_extensions
             pip install python-dev-tools --user --upgrade
-            pip install --upgrade setuptools
+      #     pip install --upgrade setuptools
             pip install requests
             pip install cython
             # Install hdbscan separately
