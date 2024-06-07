@@ -71,7 +71,6 @@ jobs:
             pip install python-dev-tools --user --upgrade
             pip install requests
             pip install cython
-          # Install hdbscan separately
             pip install hdbscan || echo "hdbscan installation failed"
             
             pip install -r requirements.txt
@@ -114,7 +113,6 @@ jobs:
             pip install python-dev-tools --user --upgrade
             pip install requests
             pip install cython
-          # Install hdbscan separately
             pip install hdbscan || echo "hdbscan installation failed"
        
             pip install -r requirements.txt
