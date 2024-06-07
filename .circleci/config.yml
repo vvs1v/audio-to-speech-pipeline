@@ -60,18 +60,10 @@ jobs:
           command: |
             python --version ; pip --version ; pwd ; ls
             sudo apt-get update
-            sudo apt-get install -y ffmpeg
-            sudo apt-get install -y sox
-            sudo apt-get install -y gcc-multilib g++-multilib
-            sudo apt-get install libpq-dev
+            sudo apt-get install -y ffmpeg libsm6 libxext6 sox gcc-multilib g++-multilib libpq-dev
             pip install --upgrade pip
-            pip install numpy
-            pip install wheel  #to install wheel added on 06-06 by vaibhav
-            pip install typing_extensions  # Install typing_extensions
-            pip install python-dev-tools --user --upgrade
-            pip install requests
-            pip install cython
-            pip install hdbscan || echo "hdbscan installation failed"
+            pip install numpy wheel typing_extensions python-dev-tools requests cython
+            pip install hdbscan==0.8.27 || echo "hdbscan installation failed"
             
             pip install -r requirements.txt
             python --version ; pip --version ; pwd ; ls
@@ -101,19 +93,11 @@ jobs:
           name: Setup Testing Environment
           command: |
             python --version ; pip --version ; pwd ; ls
-            sudo apt-get update --allow-releaseinfo-change
-            sudo apt-get install -y ffmpeg
-            sudo apt-get install -y sox
-            sudo apt-get install -y gcc-multilib g++-multilib
-            sudo apt-get install libpq-dev
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg libsm6 libxext6 sox gcc-multilib g++-multilib libpq-dev
             pip install --upgrade pip
-            pip install numpy
-            pip install wheel  #to install wheel added on 06-06 by vaibhav
-            pip install typing_extensions  # Install typing_extensions
-            pip install python-dev-tools --user --upgrade
-            pip install requests
-            pip install cython
-            pip install hdbscan || echo "hdbscan installation failed"
+            pip install numpy wheel typing_extensions python-dev-tools requests cython
+            pip install hdbscan==0.8.27 || echo "hdbscan installation failed"
        
             pip install -r requirements.txt
             python --version ; pip --version ; pwd ; ls
