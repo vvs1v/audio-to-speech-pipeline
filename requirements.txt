@@ -4,11 +4,11 @@ hdbscan   #==0.8.33   #removing build number from hdbscan to resolve the error l
 cffi==1.14.0
 chardet==3.0.4
 decorator==4.4.2
-google-api-core==1.17.0 to check if it can resolve hdbscan error for time being
-google-auth==1.15.0
-google-cloud-core==1.3.0
-google-cloud-speech==1.3.2
-google-cloud-storage==1.28.1
+google-api-core #to check if it can resolve hdbscan error for time being
+google-auth
+google-cloud-core
+google-cloud-speech
+google-cloud-storage
 google-resumable-media==0.5.0
 googleapis-common-protos==1.51.0
 #grpcio==1.29.0 Removed on 20240529
