@@ -23,7 +23,7 @@ jobs:
         type: string
     machine:
       # image: ubuntu-1604:201903-01
-      image: cimg/gcp:2024.03
+      image: cimg/base:2024.06
     working_directory: ~/project/packages/pipeline_workflows
     steps:
       - checkout:
@@ -148,7 +148,7 @@ jobs:
     #    executor: node
     machine:
       # image: ubuntu-1604:201903-01
-      image: cimg/gcp:2024.03
+      image: cimg/base:2024.06
     working_directory: ~/project/packages
 
     steps:
