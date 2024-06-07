@@ -1,6 +1,6 @@
 cachetools==4.1.0
 certifi==2020.4.5.1
-hdbscan==0.8.36
+hdbscan   #removing build number from hdbscan to resolve the error
 cffi==1.14.0
 chardet==3.0.4
 decorator==4.4.2
