@@ -5,6 +5,7 @@ tqdm~=4.48.2
 ipython==7.16.1
 librosa==0.8.0
 webrtcvad==2.0.10
+numpy  #added numpy before sox to resolve the error coming from build and deploy image of second step
 sox
 torch==1.6.0
 torchvision==0.7.0
@@ -107,6 +108,6 @@ wrapt==1.12.1
 WTForms==2.3.1
 yapf==0.30.0
 zipp==3.1.0
-numpy
+
 pandas==1.1.1
 # black
