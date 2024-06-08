@@ -40,7 +40,7 @@ jobs:
             gcloud auth activate-service-account --key-file ${HOME}/gcp-key.json
             gcloud --quiet config set project ${GCP_PROJECT}
             chmod -R u+w ~/.config/gcloud  
-          # added chmod -R u+w ~/.config/gcloud to fix the permission issue by vaibhav on 08-06-2024
+            #  added chmod -R u+w ~/.config/gcloud to fix the permission issue by vaibhav on 08-06-2024
             sh ~/project/packages/pipeline_workflows/deployDAG.sh << parameters.env_name >>
             rm ${HOME}/gcp-key.json
 
