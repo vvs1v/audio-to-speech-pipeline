@@ -12,8 +12,9 @@ WORKDIR /opt/ekstep_data_pipelines/
 
 
 COPY requirements.txt .
-RUN pip install numpy==1.18.4 
-# adding this numpy installation before sox installation to resolve the error coming from build and deploy image of second step by vaib on 08-06-2024
+RUN pip install numpy==1.18.4
+RUN pip install typing_extensions 
+# adding this numpy and typing extension installation before sox installation to resolve the error coming from build and deploy image of second step by vaib on 08-06-2024
 RUN pip install -r requirements.txt
 COPY ekstep_data_pipelines /opt/ekstep_data_pipelines/ekstep_data_pipelines
 COPY invocation_script.py /opt/ekstep_data_pipelines
